@@ -38,9 +38,11 @@ class BackgroundImageData {
             case .success(let value):
                 
                 let json = JSON(value)
-                if let url = json["data"]["children"][0]["data"]["preview"]["images"][0]["resolutions"][3]["url"].string {
+                
+                // the index of the array after "children" can be a random integer between 0-24
+                
+                if let url = json["data"]["children"][0]["data"]["preview"]["images"][0]["source"]["url"].string {
                     self._backgroundImageURL = url
-                    
                 }
                 
             case .failure(let error):

@@ -37,9 +37,9 @@ class ViewController: UIViewController {
     
     func updateMainUI() {
         
-        if let imageURL = NSURL(string: backgroundImageData.backgroundImageURL) {
-            if let data = NSData(contentsOf: imageURL as URL) {
-                backgroundImageView.image = UIImage(data: data as Data)
+        if let imageURL = URL(string: backgroundImageData.backgroundImageURL) {
+            if let data = try? Data(contentsOf: imageURL) {
+                backgroundImageView.image = UIImage(data: data)
             }
         }
     }
@@ -48,4 +48,11 @@ class ViewController: UIViewController {
 
 
 }
+
+
+
+
+
+
+
 
