@@ -12,6 +12,7 @@
 		42ABE2E31DEE836D0096ECEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42ABE2E11DEE836D0096ECEA /* Main.storyboard */; };
 		42ABE2E51DEE836D0096ECEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42ABE2E41DEE836D0096ECEA /* Assets.xcassets */; };
 		42ABE2E81DEE836D0096ECEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42ABE2E61DEE836D0096ECEA /* LaunchScreen.storyboard */; };
+		42ABE2F01DEE85F80096ECEA /* BackgroundImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ABE2EF1DEE85F80096ECEA /* BackgroundImageData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		42ABE2E41DEE836D0096ECEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42ABE2E71DEE836D0096ECEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42ABE2E91DEE836D0096ECEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42ABE2EF1DEE85F80096ECEA /* BackgroundImageData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundImageData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				42ABE2E41DEE836D0096ECEA /* Assets.xcassets */,
 				42ABE2E61DEE836D0096ECEA /* LaunchScreen.storyboard */,
 				42ABE2E91DEE836D0096ECEA /* Info.plist */,
+				42ABE2EF1DEE85F80096ECEA /* BackgroundImageData.swift */,
 			);
 			path = Demotivatr;
 			sourceTree = "<group>";
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					42ABE2D91DEE836D0096ECEA = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = V4RWNDPEWZ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42ABE2F01DEE85F80096ECEA /* BackgroundImageData.swift in Sources */,
 				42ABE2E01DEE836D0096ECEA /* ViewController.swift in Sources */,
 				42ABE2DE1DEE836D0096ECEA /* AppDelegate.swift in Sources */,
 			);
@@ -258,6 +263,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V4RWNDPEWZ;
 				INFOPLIST_FILE = Demotivatr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hurley.Demotivatr;
@@ -270,6 +276,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V4RWNDPEWZ;
 				INFOPLIST_FILE = Demotivatr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hurley.Demotivatr;
