@@ -8,15 +8,49 @@
 
 import Foundation
 import UIKit
-
+import Alamofire
+import SwiftyJSON
 
 
 class BackgroundImageData {
     
-    var backgroundImage: UIImage!
     
-    func getBackgoundImageData() {
+    
+    var _backgroundImageURL: String!
+    
+    var backgroundImageURL: String {
+        if _backgroundImageURL == nil {
+            _backgroundImageURL = ""
+        }
+        return _backgroundImageURL
+    }
+    
+    
+    
+    
+    func getBackgoundImageData(completed: @escaping DownloadComplete) {
+        
+        let imageURL = URL(string: IMAGE_URL)!
+        Alamofire.request(imageURL).responseJSON { response in
+            
+            switch response.result {
+                
+            case .success(let value):
+                
+                let json = JSON(value)
+                if let url = json["data"]["children"][0]["data"]["preview"]["images"][0]["resolutions"][3]["url"].string {
+                    self._backgroundImageURL = url
+                    
+                }
+                
+            case .failure(let error):
+                print(error)
+            
+            }
+            completed()
+        }
         
     }
     
 }
+    

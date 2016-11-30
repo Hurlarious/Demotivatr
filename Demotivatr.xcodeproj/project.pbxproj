@@ -13,6 +13,7 @@
 		42ABE2E51DEE836D0096ECEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42ABE2E41DEE836D0096ECEA /* Assets.xcassets */; };
 		42ABE2E81DEE836D0096ECEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42ABE2E61DEE836D0096ECEA /* LaunchScreen.storyboard */; };
 		42ABE2F01DEE85F80096ECEA /* BackgroundImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ABE2EF1DEE85F80096ECEA /* BackgroundImageData.swift */; };
+		42ABE2F21DEE8FD10096ECEA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ABE2F11DEE8FD10096ECEA /* Constants.swift */; };
 		8C038641BFA4F86B9961CD5B /* Pods_Demotivatr.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D80419EE2C07608B068E14E /* Pods_Demotivatr.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		42ABE2E71DEE836D0096ECEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42ABE2E91DEE836D0096ECEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42ABE2EF1DEE85F80096ECEA /* BackgroundImageData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundImageData.swift; sourceTree = "<group>"; };
+		42ABE2F11DEE8FD10096ECEA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4D80419EE2C07608B068E14E /* Pods_Demotivatr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demotivatr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B581DE5375B781483F4C706 /* Pods-Demotivatr.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demotivatr.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demotivatr/Pods-Demotivatr.debug.xcconfig"; sourceTree = "<group>"; };
 		9D0A43A9425D1408A4D4BAE1 /* Pods-Demotivatr.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demotivatr.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demotivatr/Pods-Demotivatr.release.xcconfig"; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				42ABE2E61DEE836D0096ECEA /* LaunchScreen.storyboard */,
 				42ABE2E91DEE836D0096ECEA /* Info.plist */,
 				42ABE2EF1DEE85F80096ECEA /* BackgroundImageData.swift */,
+				42ABE2F11DEE8FD10096ECEA /* Constants.swift */,
 			);
 			path = Demotivatr;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				42ABE2F01DEE85F80096ECEA /* BackgroundImageData.swift in Sources */,
 				42ABE2E01DEE836D0096ECEA /* ViewController.swift in Sources */,
 				42ABE2DE1DEE836D0096ECEA /* AppDelegate.swift in Sources */,
+				42ABE2F21DEE8FD10096ECEA /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +385,7 @@
 				42ABE2EE1DEE836D0096ECEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

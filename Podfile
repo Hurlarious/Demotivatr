@@ -8,5 +8,6 @@ target 'Demotivatr' do
   # Pods for Demotivatr
   
   pod 'Alamofire', '~> 4.0'
+  pod 'SwiftyJSON'
 
 end
