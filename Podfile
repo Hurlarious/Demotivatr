@@ -6,5 +6,7 @@ target 'Demotivatr' do
   use_frameworks!
 
   # Pods for Demotivatr
+  
+  pod 'Alamofire', '~> 4.0'
 
 end
