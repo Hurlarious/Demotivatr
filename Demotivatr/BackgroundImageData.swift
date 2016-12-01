@@ -14,8 +14,6 @@ import SwiftyJSON
 
 class BackgroundImageData {
     
-    
-    
     var _backgroundImageURL: String!
     
     var backgroundImageURL: String {
@@ -24,7 +22,6 @@ class BackgroundImageData {
         }
         return _backgroundImageURL
     }
-    
     
     
     
@@ -38,17 +35,17 @@ class BackgroundImageData {
             case .success(let value):
                 
                 let json = JSON(value)
+                let count = json["data"]["children"].array?.count
+                let random = Int(arc4random_uniform(UInt32(count!)))
                 
-                // the index of the array after "children" can be a random integer between 0-24
-                
-                if let url = json["data"]["children"][0]["data"]["preview"]["images"][0]["source"]["url"].string {
+                if let url = json["data"]["children"][random]["data"]["preview"]["images"][0]["source"]["url"].string {
                     self._backgroundImageURL = url
                 }
-                
+
             case .failure(let error):
                 print(error)
-            
             }
+            
             completed()
         }
         

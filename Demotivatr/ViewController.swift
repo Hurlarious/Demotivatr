@@ -25,7 +25,6 @@ class ViewController: UIViewController {
         backgroundImageData.getBackgoundImageData {
             
             print(self.backgroundImageData.backgroundImageURL)
-            
             self.updateMainUI()
         }
         
