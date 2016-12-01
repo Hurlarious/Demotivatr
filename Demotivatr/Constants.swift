@@ -10,7 +10,7 @@ import Foundation
 
 
 let IMAGE_URL = "https://www.reddit.com/r/EarthPorn/top/.json?sort=top&t=day/"
-
+let QUOTE_URL = "https://www.reddit.com/r/Showerthoughts/top/.json?sort=top&t=hour"
 
 typealias DownloadComplete = () -> ()
 

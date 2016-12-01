@@ -13,8 +13,8 @@ class ViewController: UIViewController {
     
     // MARK: - Variables/Properties/Outlets
     
-    var backgroundImage: UIImage!
     var backgroundImageData = BackgroundImageData()
+    var quoteData = QuoteData()
     
     @IBOutlet weak var backgroundImageView: UIImageView!
     
@@ -27,9 +27,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         backgroundImageData.getBackgoundImageData {
-            self.updateMainUI()
+            self.quoteData.getQuoteData {
+                self.updateMainUI()
+            }
         }
-
     }
     
 
@@ -50,7 +51,9 @@ class ViewController: UIViewController {
     @IBAction func randomPressed(_ sender: UIButton) {
         
         backgroundImageData.getBackgoundImageData {
-            self.updateMainUI()
+            self.quoteData.getQuoteData {
+                self.updateMainUI()
+            }
         }
     }
 
