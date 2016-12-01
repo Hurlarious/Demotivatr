@@ -39,8 +39,6 @@ class QuoteData {
                 
                 if let url = json["data"]["children"][random]["data"]["title"].string {
                     self._quote = url
-                    
-                    print(url)
                 }
                 
             case .failure(let error):

@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     var quoteData = QuoteData()
     
     @IBOutlet weak var backgroundImageView: UIImageView!
+    @IBOutlet weak var quoteTextLabel: UILabel!
     
     
     
@@ -42,6 +43,7 @@ class ViewController: UIViewController {
         if let imageURL = URL(string: backgroundImageData.backgroundImageURL) {
             if let data = try? Data(contentsOf: imageURL) {
                 backgroundImageView.image = UIImage(data: data)
+                quoteTextLabel.text = quoteData.quote
             }
         }
     }

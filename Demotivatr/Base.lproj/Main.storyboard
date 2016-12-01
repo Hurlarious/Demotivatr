@@ -27,26 +27,40 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nar-uf-tAA">
                                 <rect key="frame" x="121" y="606" width="133" height="30"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="27"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="Random">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="randomPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5G7-zC-DDO"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ziM-nh-nTw">
+                                <rect key="frame" x="20" y="150" width="335" height="0.0"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="pC3-mk-mW8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1Vc-7e-bOz"/>
                             <constraint firstItem="Nar-uf-tAA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C6s-9f-AYi"/>
                             <constraint firstAttribute="trailing" secondItem="pC3-mk-mW8" secondAttribute="trailing" id="EDZ-Nb-dMt"/>
+                            <constraint firstAttribute="trailing" secondItem="ziM-nh-nTw" secondAttribute="trailing" constant="20" id="XY8-d7-R0b"/>
                             <constraint firstAttribute="bottom" secondItem="pC3-mk-mW8" secondAttribute="bottom" constant="-7" id="f5a-0r-XuJ"/>
+                            <constraint firstItem="ziM-nh-nTw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="150" id="nbZ-ts-A9d"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Nar-uf-tAA" secondAttribute="bottom" constant="31" id="tso-Vg-RXt"/>
+                            <constraint firstItem="ziM-nh-nTw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="wTC-y2-mMV"/>
                             <constraint firstItem="pC3-mk-mW8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ya7-P0-tA4"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="backgroundImageView" destination="pC3-mk-mW8" id="sxk-TI-HKb"/>
+                        <outlet property="quoteTextLabel" destination="ziM-nh-nTw" id="572-dn-CcA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
