@@ -25,10 +25,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-                
+        
         backgroundImageData.getBackgoundImageData {
             self.updateMainUI()
         }
+
     }
     
 
@@ -43,7 +44,15 @@ class ViewController: UIViewController {
             }
         }
     }
-
+    
+    // MARK: - Actions
+    
+    @IBAction func randomPressed(_ sender: UIButton) {
+        
+        backgroundImageData.getBackgoundImageData {
+            self.updateMainUI()
+        }
+    }
 
 
 
