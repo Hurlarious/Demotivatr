@@ -11,26 +11,27 @@ import Alamofire
 
 class ViewController: UIViewController {
     
+    // MARK: - Variables/Properties/Outlets
     
     var backgroundImage: UIImage!
-    var backgroundImageData: BackgroundImageData!
+    var backgroundImageData = BackgroundImageData()
     
     @IBOutlet weak var backgroundImageView: UIImageView!
     
     
+    
+    
+    // MARK: - Lifecycle 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
                 
-        backgroundImageData = BackgroundImageData()
         backgroundImageData.getBackgoundImageData {
-            
-            print(self.backgroundImageData.backgroundImageURL)
             self.updateMainUI()
         }
-        
-        
     }
     
+
     
     // MARK: - Functions
     

@@ -48,8 +48,6 @@ class BackgroundImageData {
             
             completed()
         }
-        
     }
-    
 }
     
