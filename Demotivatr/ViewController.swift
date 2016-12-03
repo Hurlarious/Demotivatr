@@ -19,9 +19,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var quoteTextLabel: UILabel!
     
-    
-    
-    
     // MARK: - Lifecycle 
     
     override func viewDidLoad() {
@@ -33,8 +30,6 @@ class ViewController: UIViewController {
             }
         }
     }
-    
-
     
     // MARK: - Functions
     
@@ -58,9 +53,8 @@ class ViewController: UIViewController {
             }
         }
     }
-
-
-
+    
+    
 }
 
 

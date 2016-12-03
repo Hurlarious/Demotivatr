@@ -24,7 +24,6 @@ class BackgroundImageData {
     }
     
     
-    
     func getBackgoundImageData(completed: @escaping DownloadComplete) {
         
         let imageURL = URL(string: IMAGE_URL)!
